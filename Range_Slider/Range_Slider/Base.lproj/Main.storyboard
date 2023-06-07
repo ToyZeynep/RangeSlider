@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Range_Slider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aav-AD-Bcn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJR-he-6BK" customClass="RangeSlider" customModule="PriceRangeSlider" customModuleProvider="target">
+                                <rect key="frame" x="16" y="109" width="361" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yq6-0C-0pK"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="min value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVh-7c-XsU">
+                                <rect key="frame" x="16" y="189" width="161" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="FAw-ib-xw4"/>
+                                    <constraint firstAttribute="width" constant="161" id="dH4-ye-tKU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="max value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpd-4x-D46">
+                                <rect key="frame" x="216" y="189" width="161" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="eaU-Bs-WxQ"/>
+                                    <constraint firstAttribute="height" constant="34" id="f2H-nH-5Es"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b08-j3-fHq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aJR-he-6BK" firstAttribute="leading" secondItem="b08-j3-fHq" secondAttribute="leading" constant="16" id="BV8-IM-c7e"/>
+                            <constraint firstItem="OVh-7c-XsU" firstAttribute="top" secondItem="aJR-he-6BK" secondAttribute="bottom" constant="50" id="NNL-p8-d2z"/>
+                            <constraint firstItem="fpd-4x-D46" firstAttribute="top" secondItem="aJR-he-6BK" secondAttribute="bottom" constant="50" id="SuI-2H-LQ4"/>
+                            <constraint firstItem="b08-j3-fHq" firstAttribute="trailing" secondItem="aJR-he-6BK" secondAttribute="trailing" constant="16" id="eBK-7j-Nqr"/>
+                            <constraint firstItem="b08-j3-fHq" firstAttribute="trailing" secondItem="fpd-4x-D46" secondAttribute="trailing" constant="16" id="fqX-rP-Bhf"/>
+                            <constraint firstItem="aJR-he-6BK" firstAttribute="top" secondItem="b08-j3-fHq" secondAttribute="top" constant="50" id="liW-IB-tEq"/>
+                            <constraint firstItem="OVh-7c-XsU" firstAttribute="leading" secondItem="b08-j3-fHq" secondAttribute="leading" constant="16" id="ujS-Kx-JtZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
